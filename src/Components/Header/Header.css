@@ -1,0 +1,150 @@
+header {
+    padding-top: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: -webkit-fill-available;
+    z-index: 10;
+}
+
+
+header nav .navbar-nav .nav-item {
+    padding: 0 15px;
+}
+
+header nav .navbar-nav .nav-item:first-child {
+    padding-left: 0;
+}
+
+header nav .navbar-nav .nav-item:last-child {
+    padding-right: 0;
+}
+
+header nav .navbar-nav .nav-item a {
+    font-family: var(--cormorant);
+    font-size: 28px;
+    font-weight: 500;
+    /* line-height: 33.91px; */
+    color: var(--white);
+}
+
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("../../assets/images/toggel-menu.png")
+}
+
+header .offcanvas {
+    /* background-color: rgba(0, 2, 22, 1); */
+    background: rgba(18, 14, 31, 1);
+    border-right: 1px solid rgba(255, 255, 255, .4) !important;
+}
+
+header .offcanvas .offcanvas-header .btn-close:focus {
+    box-shadow: none;
+}
+
+header .offcanvas .offcanvas-header .btn-close:before {
+    content: '\2715';
+    font-size: 1.5rem;
+    /* color: rgba(255, 255, 255, .4); */
+    color: rgb(255 255 255);
+    display: inline-block;
+    line-height: 0;
+    opacity: 1;
+}
+
+
+
+
+
+@media (max-width: 1399px) {
+    header {
+        padding-top: 55px;
+    }
+
+    header nav .navbar-nav .nav-item a {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 1199px) {
+    header {
+        padding-top: 45px;
+    }
+
+    header nav .navbar-nav .nav-item a {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 991px) {
+    header {
+        padding-top: 40px;
+    }
+
+    header nav .navbar-nav .nav-item {
+        padding: 0 0px;
+    }
+
+    header nav .offcanvas .offcanvas-header img {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 767px) {
+    header {
+        padding-top: 30px;
+    }
+
+    header nav .navbar-nav .nav-item a {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 575px) {
+    header {
+        padding-top: 25px;
+    }
+
+    header nav .navbar-brand img{
+        max-width: 85%;
+    }
+
+    header nav .navbar-nav .nav-item a {
+        font-size: 20px;
+    }
+
+    header nav .offcanvas .offcanvas-header img {
+        max-width: 70%;
+    }   
+}
+
+@media (max-width: 425px) {
+    header {
+        padding-top: 20px;
+    }
+
+    header nav .navbar-brand img{
+        max-width: 75%;
+    }
+}
+
+@media (max-width: 375px) {
+    header nav .navbar-brand img{
+        max-width: 60%;
+    }
+
+    header nav .offcanvas .offcanvas-header img{
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 345px) {
+    header nav .container-fluid{
+        flex-wrap: nowrap !important;
+    }
+}

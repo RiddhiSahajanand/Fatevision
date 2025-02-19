@@ -1,0 +1,288 @@
+/* -------- Register-Banner Start -------- */
+
+.register-banner {
+    position: relative;
+    /* background: rgba(0, 0, 0, 0.1); */
+    background-image: url('../../assets/Images/Home/banner-bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* height: 100vh; */
+    overflow: hidden;
+    padding-block: 230px 120px;
+}
+
+.register-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url('../../assets/Images/Home/banner-before.png');
+    z-index: 1;
+}
+
+.register-banner .row .left {
+    position: relative;
+    z-index: 2;
+}
+
+.register-banner .left h3 {
+    font-family: var(--cormorant);
+    font-size: 60px;
+    font-weight: 600;
+    /* line-height: 67.8px; */
+    color: var(--fffdfc);
+    margin-bottom: 16px;
+}
+
+
+.register-banner .left p {
+    font-family: var(--open);
+    font-size: 19px;
+    font-weight: 600;
+    /* line-height: 27.04px; */
+    color: var(--fffdfc);
+    margin-bottom: 19px;
+
+}
+
+
+@media (max-width: 1399px) {
+    .register-banner{
+        padding-block: 210px 100px;
+    }
+ 
+    .register-banner .left h3 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .register-banner .left h3 {
+        font-size: 45px;
+    }
+
+    .register-banner .left p{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 991px) {
+    .register-banner{
+        padding-block: 190px 90px;
+    }
+
+    .register-banner .left h3 {
+        font-size: 40px;
+    }
+
+    .register-banner .left p{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .register-banner{
+        padding-block: 170px 70px;
+    }
+
+    .register-banner .left h3 {
+        font-size: 35px;
+    }
+
+    .register-banner .left p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 575px) {
+    .register-banner{
+        padding-block: 160px 60px;
+    }
+
+    .register-banner .left h3{
+        font-size: 30px;
+    }   
+
+    .register-banner .left p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 425px) {
+    .register-banner{
+        padding-block: 150px 50px;
+    }
+
+    .register-banner .left h3{
+        /* font-size: 25px; */
+    }
+}
+
+
+@media (max-width: 375px) {
+    .register-banner{
+        padding-block: 140px 40px;
+    }
+
+    .register-banner .left h3{
+        /* font-size: 25px; */
+    }
+}
+
+/* -------- Register-Banner End -------- */
+
+
+/* -------- Register-Form Start -------- */
+
+.register-form {
+    margin-block: 60px;
+    border: var(--form-border);
+    border-radius: 30px;
+    padding: 40px 50px;
+}
+
+.register-form .title {
+    font-family: var(--cormorant);
+    font-size: 60px;
+    font-weight: 600;
+    /* line-height: 67.8px; */
+    color: var(--fffdfc);
+    margin-bottom: 25px;
+}
+
+.register-form form {}
+
+.register-form form .form-control,
+.register-form form .form-select {
+    border: 1px solid #FFFFFF;
+    /* box-shadow: 5px 4px 25px 0px #C072E561; */
+    background: #0000001A;
+    width: 100%;
+    border-radius: 20px;
+    padding: 18px 30px;
+
+    font-family: var(--open);
+    font-size: 20px;
+    font-weight: 600;
+    /* line-height: 27.24px; */
+    color: var(--white);
+}
+
+.register-form form .form-control::placeholder {
+    color: var(--white);
+}
+
+.register-form form select option {
+    background-color: #000000 !important;
+    color: white;
+}
+
+.register-form form select {
+    --bs-form-select-bg-img: url("../../assets/Images/arrow-bottom1.png")
+}
+
+
+
+.register-form form .main-btn:first-child {
+    border: 1px solid #FFFFFF;
+    background: #0000001A;
+    box-shadow: none;
+}
+
+
+.custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /* background-color: #0000001a; */
+    color: white;
+}
+
+
+
+@media (max-width: 1399px) {
+    .register-form .title {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .register-form .title {
+        font-size: 45px;
+    }
+
+    .register-form {
+        padding: 35px 40px;
+    }
+
+    .register-form .title {
+        /* margin-bottom: 20px; */
+    }
+
+    .register-form form .form-control,
+    .register-form form .form-select{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 991px) {
+    .register-form .title {
+        font-size: 40px;
+    }
+
+    .register-form {
+        padding: 35px 35px;
+    }
+
+    .register-form form .form-control,
+    .register-form form .form-select{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .register-form .title {
+        font-size: 35px;
+    }
+
+    .register-form {
+        padding: 30px 30px;
+    }
+
+    .register-form form .form-control,
+    .register-form form .form-select {
+        padding: 14px 25px;
+    }
+}
+
+@media (max-width: 575px) {
+    .register-form .title {
+        font-size: 30px;
+    }
+
+    .register-form {
+        padding: 25px 25px;
+    }
+
+    .register-form form .form-control,
+    .register-form form .form-select {
+        padding: 12px 22px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 425px) {
+    .register-form .title {
+        font-size: 22px;
+    }
+
+    .register-form {
+        padding: 20px 20px;
+    }
+}
+
+/* -------- Register-Form End -------- */

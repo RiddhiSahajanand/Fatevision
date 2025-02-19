@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    position: relative;
+}
+
+:root {
+    /* Font-Family */
+    --open: "Open Sans", serif;
+    --cormorant: "Cormorant", serif;
+    --urbanist: "Urbanist", serif;
+
+    /* Color */
+    --white: #fff;
+
+    /* Text-Color */
+    --fffdfc: #FFFDFC;
+
+    /* Button-Color */
+    --main-btn: linear-gradient(272.83deg, #800AAE 6.96%, #C96FED 92.74%);
+    --btn2: #0000001A;
+
+    /* Box-Backgroung-Color */
+    --box: linear-gradient(131.95deg, rgba(156, 86, 183, 0) 0%, #7F0AAD 103.15%);
+
+    /* Box-Border */
+    --box-border: 2px solid #CE7CFA;
+
+    /* Form-Border */
+    --form-border: 2px solid #FFFFFF;
+}
+
+body {
+    position: relative;
+    background: url("../assets/Images/body-bg.png") rgba(18, 14, 31, 1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+ul,
+/* ol, */
+li {
+    list-style:  none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* input {
+    border: 1px solid var(--white);
+}
+
+input::placeholder {
+    color:  var(--white);
+} */
+
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+
+/* Custom CSS to ensure full width */
+.iti {
+    width: 100% !important;
+}
+
+.iti__input {
+    width: 100% !important;
+}
+
+.iti input.iti__tel-input{
+    padding-left: 60px !important;
+}
+
+
+
+.main-btn {
+    background: var(--main-btn);
+    box-shadow: 5px 4px 25px 0px #C072E561;
+    border-radius: 50px;
+    border: 0;
+    padding: 16px 43px;
+    font-family: var(--open);
+    font-size: 20px;
+    font-weight: 600;
+    /* line-height: 27.24px; */
+    color: var(--white);
+}
+
+
+@media (max-width: 1399px) {
+    .main-btn {}
+}
+
+@media (max-width: 1199px) {
+    .main-btn {
+        font-size: 18px;
+        padding: 14px 43px;
+    }
+}
+
+@media (max-width: 991px) {
+    .main-btn {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-btn {}
+}
+
+@media (max-width: 575px) {
+    .main-btn {
+        font-size: 14px;
+        padding: 12px 40px;
+    }
+}
+
+@media (max-width: 425px) {
+    .main-btn {
+        padding: 12px 35px;
+    }
+}
+
+
+
+
+.pd {
+    padding-inline: 60px;
+}
+
+@media (max-width: 1399px) {
+    .pd {
+        padding-inline: 55px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .pd {
+        padding-inline: 45px;
+    }
+}
+
+@media (max-width: 991px) {
+    .pd {
+        padding-inline: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .pd {
+        padding-inline: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .pd {
+        padding-inline: 25px;
+    }
+}
+
+@media (max-width: 425px) {
+    .pd {
+        padding-inline: 20px;
+    }
+}
+
+
+
+
+.md {
+    margin-inline: 60px;
+}
+
+@media (max-width: 1399px) {
+    .md {
+        margin-inline: 55px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .md {
+        margin-inline: 45px;
+    }
+}
+
+@media (max-width: 991px) {
+    .md {
+        margin-inline: 40px;
+    }
+}
+
+@media (max-width: 767px) {
+    .md {
+        margin-inline: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .md {
+        margin-inline: 25px;
+    }
+}
+
+@media (max-width: 425px) {
+    .md {
+        margin-inline: 20px;
+    }
+}

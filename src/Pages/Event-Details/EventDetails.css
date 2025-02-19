@@ -1,0 +1,574 @@
+/* -------- Event-Details-Banner Start -------- */
+
+.events-details-banner {
+    position: relative;
+    /* background: rgba(0, 0, 0, 0.1); */
+    background-image: url('../../assets/Images/Home/banner-bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* height: 100vh; */
+    overflow: hidden;
+    padding-block: 230px 120px;
+}
+
+.events-details-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url('../../assets/Images/Home/banner-before.png');
+    z-index: 1;
+}
+
+.events-details-banner .row .left {
+    position: relative;
+    z-index: 2;
+}
+
+.events-details-banner .left h3 {
+    font-family: var(--cormorant);
+    font-size: 60px;
+    font-weight: 600;
+    /* line-height: 67.8px; */
+    color: var(--fffdfc);
+    margin-bottom: 16px;
+}
+
+
+.events-details-banner .left p {
+    font-family: var(--open);
+    font-size: 19px;
+    font-weight: 600;
+    /* line-height: 27.04px; */
+    color: var(--fffdfc);
+    margin-bottom: 19px;
+}
+
+
+
+@media (max-width: 1399px) {
+    .events-details-banner {
+        padding-block: 210px 100px;
+    }
+
+    .events-details-banner .left h3 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .events-details-banner .left h3 {
+        font-size: 45px;
+    }
+
+    .events-details-banner .left p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 991px) {
+    .events-details-banner {
+        padding-block: 190px 90px;
+    }
+
+    .events-details-banner .left h3 {
+        font-size: 40px;
+    }
+
+    .events-details-banner .left p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .events-details-banner {
+        padding-block: 170px 70px;
+    }
+
+    .events-details-banner .left h3 {
+        font-size: 35px;
+    }
+
+    .events-details-banner .left p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 575px) {
+    .events-details-banner {
+        padding-block: 160px 60px;
+    }
+
+    .events-details-banner .left h3 {
+        font-size: 30px;
+    }
+
+    .events-details-banner .left p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 425px) {
+    .events-details-banner {
+        padding-block: 150px 50px;
+    }
+
+    .events-details-banner .left h3 {
+        /* font-size: 25px; */
+    }
+}
+
+
+@media (max-width: 375px) {
+    .events-details-banner {
+        padding-block: 140px 40px;
+    }
+
+    .events-details-banner .left h3 {
+        /* font-size: 25px; */
+    }
+}
+
+/* -------- Event-Details-Banner End -------- */
+
+
+
+/* -------- Event-Details Start -------- */
+
+.event-details {
+    padding-block: 60px;
+}
+
+.event-details .event-img {
+    width: 100%;
+}
+
+.event-details h1 {
+    font-family: var(--open);
+    color: var(--fffdfc);
+    font-size: 50px;
+    font-weight: 600;
+    /* line-height: 81.71px; */
+    margin: 25px 0 20px;
+}
+
+.event-details .date {
+    margin-bottom: 20px;
+}
+
+.event-details .date .date-img {}
+
+.event-details .date span {
+    font-family: var(--open);
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 600;
+    /* line-height: 36.4px; */
+}
+
+.event-details p {
+    font-family: var(--open);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* letter-spacing: 0.2px; */
+}
+
+
+.event-details .event-images {
+    margin-block: 45px;
+}
+
+.event-details .event-images h5 {
+    font-family: var(--open);
+    color: var(--fffdfc);
+    font-weight: 600;
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.event-details .event-images .box {
+    border: var(--box-border);
+    background: var(--box);
+    box-shadow: 5px 4px 35px 0px #842CB342;
+    border-radius: 20px;
+    padding: 10px;
+    height: 100%;
+}
+
+
+
+
+.event-details .event-astrologer {}
+
+.event-details .event-astrologer h5 {
+    font-family: var(--open);
+    color: var(--fffdfc);
+    font-weight: 600;
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.event-details .event-astrologer .box {
+    border: var(--box-border);
+    background: var(--box);
+    box-shadow: 5px 4px 35px 0px #842CB342;
+    border-radius: 20px;
+    padding: 30px;
+    height: 100%;
+}
+
+.event-details .event-astrologer .box .event-astrologer-img {}
+
+.event-details .event-astrologer .box .info {
+    margin-left: 30px;
+}
+
+.event-details .event-astrologer .box .info h4 {
+    font-family: var(--open);
+    color: var(--fffdfc);
+    font-weight: 600;
+    font-size: 43.04px;
+}
+
+.event-details .event-astrologer .box .info .review {}
+
+.event-details .event-astrologer .box .info .review .review-img {}
+
+.event-details .event-astrologer .box .info .review span {
+    font-family: var(--open);
+    color: var(--fffdfc);
+    font-weight: 500;
+    font-size: 22.86px;
+
+}
+
+.event-details .event-astrologer .box .info p {
+    font-family: var(--open);
+    color: var(--fffdfc);
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.event-details .event-astrologer .box .info .main-btn {
+    background: var(--white);
+    color: #780EA3;
+    box-shadow: none;
+    font-size: 20px;
+    padding: 12px 24px;
+    margin-top: 20px;
+}
+
+
+
+@media (max-width: 1399px) {
+    .event-details {
+        padding-block: 55px;
+    }
+
+    .event-details h1 {
+        font-size: 45px;
+        margin: 40px 0 15px;
+    }
+
+    .event-details .date {
+        margin-bottom: 15px;
+    }
+
+    .event-details .date span {
+        font-size: 20px;
+    }
+
+    .event-details p {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .event-details .event-images h5,
+    .event-details .event-astrologer h5 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .event-details .event-astrologer .box .info h4 {
+        font-size: 39.04px;
+    }
+
+    .event-details .event-astrologer .box .info .review .review-img {
+        width: 40px;
+    }
+
+    .event-details .event-astrologer .box .info .review span {
+        font-size: 20px;
+    }
+
+    .event-details .event-astrologer .box .info p {
+        font-size: 20px;
+        margin-bottom: 6px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .event-details {
+        padding-block: 45px;
+    }
+
+    .event-details h1 {
+        font-size: 40px;
+        margin: 30px 0 10px;
+    }
+
+    .event-details .date {
+        margin-bottom: 10px;
+    }
+
+    .event-details .date .date-img {
+        width: 22px;
+    }
+
+    .event-details .date span {
+        font-size: 19px;
+    }
+
+    .event-details p {
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    .event-details .event-images h5,
+    .event-details .event-astrologer h5 {
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+
+    .event-details .event-astrologer .box {
+        padding: 25px;
+    }
+
+    .event-details .event-astrologer .box .info {
+        margin-left: 25px;
+    }
+
+    .event-details .event-astrologer .box .info h4 {
+        font-size: 35px;
+    }
+
+    .event-details .event-astrologer .box .info .review .review-img {
+        width: 30px;
+    }
+
+    .event-details .event-astrologer .box .info .review span {
+        font-size: 18px;
+    }
+
+    .event-details .event-astrologer .box .info p {
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+
+    .event-details .event-astrologer .box .info .main-btn {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .event-details {
+        padding-block: 40px;
+    }
+
+    .event-details h1 {
+        font-size: 35px;
+        margin: 25px 0 10px;
+    }
+
+    .event-details .date .date-img {
+        width: 18px;
+    }
+
+    .event-details .date span {
+        font-size: 18px;
+    }
+
+    .event-details p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .event-details .event-images h5,
+    .event-details .event-astrologer h5 {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .event-details .event-astrologer .box {
+        padding: 20px;
+    }
+
+    .event-details .event-astrologer .box .info {
+        margin-left: 20px;
+    }
+
+    .event-details .event-astrologer .box .info h4 {
+        font-size: 30px;
+    }
+
+    .event-details .event-astrologer .box .info .review span {
+        font-size: 17px;
+    }
+
+    .event-details .event-astrologer .box .info p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 767px) {
+    .event-details {
+        /* padding-block: 30px; */
+    }
+
+    .event-details h1 {
+        font-size: 30px;
+        margin: 20px 0 10px;
+    }
+
+    .event-details .date span {
+        font-size: 16px;
+    }
+
+    .event-details p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .event-details .event-images h5,
+    .event-details .event-astrologer h5 {
+        font-size: 26px;
+    }
+
+
+    .event-details .event-astrologer .box .event-astrologer-img img {
+        width: 100%;
+    }
+
+    .event-details .event-astrologer .box .info {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .event-details .event-astrologer .box .info h4 {
+        font-size: 26px;
+    }
+
+    .event-details .event-astrologer .box .info .review .review-img {
+        width: 25px;
+    }
+
+    .event-details .event-astrologer .box .info .review span {
+        font-size: 15px;
+    }
+
+    .event-details .event-astrologer .box .info p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 575px) {
+    .event-details {
+        /* padding-block: 25px; */
+    }
+
+    .event-details h1 {
+        font-size: 28px;
+    }
+
+    .event-details .date span {
+        /* font-size: 14px; */
+    }
+
+    .event-details p {
+        /* font-size: 15px;
+        line-height: 22px; */
+    }
+
+    .event-details .event-images h5,
+    .event-details .event-astrologer h5 {
+        font-size: 24px;
+    }
+
+    .event-details .event-astrologer .box .info h4 {
+        font-size: 24px;
+    }
+
+    .event-details .event-astrologer .box .info .review .review-img {
+        width: 20px;
+    }
+
+    .event-details .event-astrologer .box .info .review span {
+        font-size: 14px;
+    }
+
+    .event-details .event-astrologer .box .info p {
+        font-size: 14px;
+    }
+
+    .event-details .event-astrologer .box .info .main-btn {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 425px) {
+    .event-details {
+        /* padding-block: 20px; */
+    }
+
+    .event-details h1 {
+        font-size: 22px;
+    }
+
+    .event-details .date .date-img {
+        width: 15px;
+    }
+
+    .event-details .date span {
+        font-size: 14px;
+    }
+
+    .event-details p {
+        font-size: 14px;
+    }
+
+    .event-details .event-images h5,
+    .event-details .event-astrologer h5 {
+        font-size: 22px;
+    }
+
+    .event-details .event-astrologer .box .info .d-flex {
+        display: block !important;
+        margin-bottom: 10px;
+    }
+
+    .event-details .event-astrologer .box .info h4 {
+        font-size: 22px;
+    }
+
+    .event-details .event-astrologer .box .info .review .review-img {
+        width: 16px;
+    }
+
+    .event-details .event-astrologer .box .info .main-btn {
+        font-size: 14px;
+        margin-top: 12px;
+    }
+}
+
+@media (max-width: 375px) {}
+
+/* -------- Event-Details End -------- */

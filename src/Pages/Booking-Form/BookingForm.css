@@ -1,0 +1,151 @@
+.booking-form {}
+
+
+.booking-form form .react-tel-input {}
+
+
+.booking-form form .contry {
+    padding-left: 92px;
+    padding-block: 30px !important;
+}
+
+
+.react-tel-input .selected-flag:hover,
+.react-tel-input .selected-flag:focus {
+    background: #0000001A !important;
+}
+
+.react-tel-input .selected-flag .arrow {
+    background-image: url("/src/assets/Images/arrow.png") !important;
+    background-position: center;
+    width: 100% !important;
+    height: 100% !important;
+    background-repeat: no-repeat;
+    margin-top: 1px;
+    border: 0 !important;
+    top: 0 !important;
+    margin-top: 1px !important;
+}
+
+.react-tel-input .selected-flag .arrow.up {
+    border: 0;
+}
+
+.react-tel-input .flag-dropdown,
+.react-tel-input .flag-dropdown:hover,
+.react-tel-input .flag-dropdown:focus,
+.react-tel-input .flag-dropdown.open {
+    background: #0000001A !important;
+}
+
+.react-tel-input .flag-dropdown.open .selected-flag {
+    background-color: #0000001A !important;
+
+}
+
+.react-tel-input .selected-flag {
+    border-radius: 20px 0 0 20px;
+    /* padding: 0 0 0 30px !important;
+    width: 80px !important; */
+}
+
+
+.react-tel-input .flag-dropdown {
+    /* border-right: 2px solid #ffff !important; */
+    border-left: 0 !important;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+    border-right: 0 !important;
+    position: relative;
+
+    padding: 0 15px 0 30px !important;
+}
+
+.react-tel-input .flag-dropdown:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* top: 5px;
+    bottom: 5px; */
+    right: 0;
+    width: 0.98px;
+    height: 28px;
+    /* border-right: 0.98px solid #FFFFFF; */
+    background-color: #ffff;
+}
+
+.react-tel-input .country-list .search,
+.react-tel-input .country-list {
+    /* background-color: #000000 !important;
+    color: #fff;
+    border: 1px solid #fff !important; */
+
+}
+
+
+.react-tel-input .country-list .country:focus,
+.react-tel-input .country-list .country:hover,
+.react-tel-input .country-list .country.highlight {
+    background-color: rgba(255, 255, 255, .1) !important;
+}
+
+
+
+
+
+
+
+
+
+.iti__arrow {
+    display: none !important;
+}
+
+
+
+
+/* In your App.css or custom CSS file */
+select {
+    appearance: none;
+    background: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+input {
+    padding: 5px;
+    font-size: 14px;
+}
+
+div {
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+@media (max-width: 767px) {
+    .booking-form form .contry {
+        padding-block: 25px !important;
+    }
+    
+    .react-tel-input .flag-dropdown{
+        padding: 0 15px 0 22px !important;
+    }
+}
+
+
+@media (max-width: 575px) {
+    .booking-form form .contry {
+        padding-block: 22px !important;
+    }
+    
+    .react-tel-input .flag-dropdown{
+        padding: 0 15px 0 18px !important;
+    }
+
+    .booking-form form .contry {
+        padding-left: 85px;
+    }
+}
