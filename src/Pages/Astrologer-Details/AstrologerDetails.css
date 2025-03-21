@@ -171,7 +171,9 @@
 
 .astrologer-details .review {}
 
-.astrologer-details .review .review-img {}
+.astrologer-details .review .review-img {
+    height: 40px;
+}
 
 .astrologer-details .review span {
     font-family: var(--open);

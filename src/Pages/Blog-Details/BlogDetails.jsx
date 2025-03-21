@@ -746,7 +746,7 @@ const BlogDetails = () => {
                         {data?.description}
                     </p>
 
-                    <h5 className='mb-4'>FAQs</h5>
+                    {/* <h5 className='mb-4'>FAQs</h5>
                     <div className="accordion" id="accordionExample">
                         <div className="accordion-item">
                             <h2 className="accordion-header">
@@ -813,7 +813,7 @@ const BlogDetails = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </>
 
             </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "./EventDetails.css";
 import EventDetails1 from "../../assets/Images/Events/EventDetails1.png";
 import RatingStar from "../../assets/Images/Astrologer/RatingStar.png";
@@ -9,8 +9,35 @@ import EventImages2 from "../../assets/Images/Events/EventImages2.png";
 import EventImages3 from "../../assets/Images/Events/EventImages3.png";
 import EventImages4 from "../../assets/Images/Events/EventImages4.png";
 import EventAstrologerDetail from "../../assets/Images/Events/EventAstrologerDetail.png";
+import { useLocation } from 'react-router-dom';
+import { Axios } from '../../helper/Axios';
 
 const EventDetails = () => {
+    const state = useLocation();
+    const eventId = state?.state;
+    const [data, setData] = useState({});
+
+    const eventDetails = async () => {
+        try {
+            const res = await Axios.get(`/events/detail/${eventId}`);
+
+            console.log("eventDetail", res);
+
+            if (res.data.status === true) {
+                setData(res?.data?.data);
+            }
+            else {
+                console.error("error", e);
+            }
+        } catch (e) {
+            console.error("error", e);
+        }
+    }
+
+    useEffect(() => {
+        eventDetails();
+    }, [state]);
+
     return (
         <>
 
@@ -27,7 +54,6 @@ const EventDetails = () => {
                                 enthusiasts, experts, and seekers to explore the <br className='d-none d-sm-block' />
                                 celestial forces shaping our lives.
                             </p>
-
                         </div>
                     </div>
                     <div className="col-lg-6">
@@ -44,32 +70,38 @@ const EventDetails = () => {
             <div className="event-details pd">
                 <img src={EventDetails1} alt="" className='img-fluid event-img' />
 
-                <h1>The Zodiac Experience</h1>
+                <h1>{data?.event?.name}</h1>
 
                 <div className='date d-flex align-items-center'>
                     <img src={Date2} alt="" className='date-img' />
-                    <span className='ms-2 ms-sm-2 ms-xl-3'>28 Jan, 2025 / 5:30 pm</span>
+                    <span className='ms-2 ms-sm-2 ms-xl-3'>{data?.event?.date}/ {data?.event?.time}</span>
                 </div>
 
                 <div className='date d-flex align-items-center'>
                     <img src={Location2} alt="" className='date-img' />
-                    <span className='ms-2 ms-sm-2 ms-xl-3'>Sector 17, Noida, Uttar Pradesh</span>
+                    <span className='ms-2 ms-sm-2 ms-xl-3'>{data?.event?.location}</span>
                 </div>
 
                 <p className='mb-3 mb-xl-3 mb-xxl-4'>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                    {data?.event?.description}
                 </p>
-
-                <p>
-                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-
 
                 <div className="event-images">
                     <h5>Event Images</h5>
 
                     <div className='row g-5'>
-                        <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
+                        {data?.images?.map((item, index) => {
+                            return (
+                                <>
+                                    <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
+                                        <div className="box">
+                                            <img src={item?.image} alt="" className='w-100' style={{ height: '280px' }} />
+                                        </div>
+                                    </div>
+                                </>
+                            )
+                        })}
+                        {/* <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
                             <div className="box">
                                 <img src={EventImages1} alt="" className='w-100' />
                             </div>
@@ -88,7 +120,7 @@ const EventDetails = () => {
                             <div className="box">
                                 <img src={EventImages4} alt="" className='w-100' />
                             </div>
-                        </div>
+                        </div> */}
 
                     </div>
                 </div>

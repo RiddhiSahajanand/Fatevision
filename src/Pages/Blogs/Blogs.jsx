@@ -68,28 +68,31 @@ const Blogs = () => {
             {/* -------- Blogs Start -------- */}
             <div className="blogs pd">
                 <div className="row g-4">
-                    {blogList?.map((item, index) => {
-                        return (
-                            <>
-                                <div className="col-lg-6">
-                                    <div className="box d-sm-flex align-items-sm-center cursor-pointer" >
-                                        <div className=''>
-                                            <img src={item?.image} alt="" className='' style={{ width: '222px', height: '222px', borderRadius: '17px' }} />
-                                        </div>
-                                        <div className='info'>
-                                            <h4>{item?.title}</h4>
-                                            <p>{item?.description}</p>
-                                            <div className='date d-flex align-items-center'>
-                                                <img src={Date} alt="" className='img-fluid' />
-                                                <span className='ms-2'>{item?.date}</span>
+                    {blogList.length === 0 ?
+                        <p className='py-4 nodata-text'>No Data Found</p>
+                        :
+                        blogList?.map((item, index) => {
+                            return (
+                                <>
+                                    <div className="col-lg-6">
+                                        <div className="box d-sm-flex align-items-sm-center cursor-pointer" >
+                                            <div className=''>
+                                                <img src={item?.image} alt="" className='' style={{ width: '222px', height: '222px', borderRadius: '17px' }} />
                                             </div>
-                                            <button className='main-btn' onClick={() => handleBlogDetails(item?.id)}>
-                                                Read More
-                                            </button>
+                                            <div className='info'>
+                                                <h4>{item?.title}</h4>
+                                                <p>{item?.description}</p>
+                                                <div className='date d-flex align-items-center'>
+                                                    <img src={Date} alt="" className='img-fluid' />
+                                                    <span className='ms-2'>{item?.date}</span>
+                                                </div>
+                                                <button className='main-btn' onClick={() => handleBlogDetails(item?.id)}>
+                                                    Read More
+                                                </button>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div >
-                                {/* <div className="col-lg-6">
+                                    </div >
+                                    {/* <div className="col-lg-6">
                                     <div className="box d-sm-flex align-items-sm-center">
                                         <div className='info'>
                                             <h4>{item?.title}</h4>
@@ -106,9 +109,9 @@ const Blogs = () => {
                                         </div>
                                     </div>
                                 </div> */}
-                            </>
-                        )
-                    })}
+                                </>
+                            )
+                        })}
                     {/* <div className="col-lg-6">
                         <div className="box d-sm-flex align-items-sm-center">
                             <div className='info'>

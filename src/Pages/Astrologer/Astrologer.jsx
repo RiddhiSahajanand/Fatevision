@@ -69,27 +69,30 @@ const Astrologer = () => {
             {/* -------- Astrologer-Booking Start -------- */}
             <div className="astrologer-booking pd">
                 <div className="row g-4">
-                    {astrologersList?.map((item, index) => {
-                        return (
-                            <>
-                                <div className="col-lg-6">
-                                    <div className="box d-sm-flex align-items-sm-center cursor-pointer" onClick={() => handleAstrologerDetails(item?.id)}>
-                                        <div className='astrologer-img'>
-                                            <img src={item?.image} alt="" className='' style={{ width: '222px', borderRadius: '17px' }} />
-                                        </div>
-                                        <div className='info'>
-                                            <h4>{item?.name}</h4>
-                                            <h5>{item?.aboutYourself}</h5>
-                                            <h5>{item?.language}</h5>
-                                            <h5>{item?.experience}</h5>
-                                            <h5>₹ {item?.price ? item?.price : 0}</h5>
-                                            {/* <button className='main-btn' onClick={handleAstrologerDetails}> Book Now </button> */}
+                    {astrologersList.length === 0 ?
+                        <p className='py-4 nodata-text'>No Data Found</p>
+                        :
+                        astrologersList?.map((item, index) => {
+                            return (
+                                <>
+                                    <div className="col-lg-6">
+                                        <div className="box d-sm-flex align-items-sm-center cursor-pointer" onClick={() => handleAstrologerDetails(item?.id)}>
+                                            <div className='astrologer-img'>
+                                                <img src={item?.image} alt="" className='' style={{ width: '222px', borderRadius: '17px' }} />
+                                            </div>
+                                            <div className='info'>
+                                                <h4>{item?.name}</h4>
+                                                <h5>{item?.tag}</h5>
+                                                <h5>{item?.language}</h5>
+                                                <h5>{item?.experience}</h5>
+                                                <h5>₹ {item?.price ? item?.price : 0}</h5>
+                                                {/* <button className='main-btn' onClick={handleAstrologerDetails}> Book Now </button> */}
+                                            </div>
                                         </div>
                                     </div>
-                                </div >
-                            </>
-                        )
-                    })}
+                                </>
+                            )
+                        })}
                 </div>
             </div >
             {/* -------- Astrologer-Booking End -------- */}
